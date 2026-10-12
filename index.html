@@ -1,144 +1,447 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <head>
-    ...
-    <link rel="stylesheet" href="css/style.css">
-    ...
-</head>
     <meta charset="UTF-8">
-    <meta name="author" content="Shyliah Heads">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Homemade Hamburgers: A Classic Favorite</title>
 
-    <style>
-       body {
-        background-image: url("images/hamburger-background.jpg");
-        font-family: Georgia, serif;
-        color: #3b2416;
-    }
-
-    .academic {
-        text-align: right;
-    }
-    </style>
+    <!-- Connect the HTML file to the CSS stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-<div class="wrapper">
-<div class="box1">    
-<div class="box2">
-<body>
-    <h1>Homemade Hamburgers: A Classic Favorite</h1>
 
-    <h2>Homemade Hamburgers</h2>
+    <!-- THE OUTER CONTAINER: holds the entire webpage -->
+    <div class="container-fluid">
 
-    <p>Recipe by: Shyliah Heads, adapted from a classic homemade hamburger recipe.</p>
+        <!-- ROW 1: HEADER -->
+        <div class="row">
+            <header class="col-100" id="header">
+                <p class="eyebrow">THE HOMEMADE KITCHEN</p>
 
-    <figure>
-        <img src="images/hamburger.jpg" alt="Homemade hamburger with lettuce on a plate" height="250">
-        <figcaption>Hamburger image: Len Rizzi, National Cancer Institute, public domain.</figcaption>
-    </figure>
+                <h1 id="recipe-title">
+                    Homemade Hamburgers
+                </h1>
 
-</div>
-    
-    <h3>Ingredients</h3>
+                <p class="tagline">
+                    A classic favorite, made from scratch.
+                </p>
 
-    <ul>
-        <li>1 pound ground beef</li>
-        <li>4 hamburger buns</li>
-        <li>1 teaspoon salt</li>
-        <li>1/2 teaspoon black pepper</li>
-        <li>4 slices of cheese</li>
-        <li>Lettuce</li>
-        <li>Tomato slices</li>
-        <li>Pickles</li>
-        <li>Ketchup</li>
-        <li>Mustard</li>
-    </ul>
+                <p class="intro">
+                    Make a delicious homemade hamburger with simple
+                    ingredients and easy-to-follow instructions.
+                </p>
+            </header>
+        </div>
 
-    <h3>Equipment</h3>
 
-    <ul>
-        <li>Large mixing bowl</li>
-        <li>Skillet or grill</li>
-        <li>Spatula</li>
-        <li>Plate</li>
-        <li>Measuring spoons</li>
-    </ul>
-<h3>Rate This Recipe</h3>
+        <!-- ROW 2: LINKS, MAIN PICTURE, RATING AND CONVERSION -->
 
-<fieldset style="width: 250px;">
-    <legend>What skill level is the recipe?</legend>
+        <div class="row">
 
-    <input type="radio" id="easy" name="difficulty" value="easy">
-    <label for="easy">Easy</label><br>
+            <!-- COLUMN 1: LINKS -->
+            <nav class="col-20 section links-section" id="links">
+                <h2>Explore</h2>
 
-    <input type="radio" id="intermediate" name="difficulty" value="intermediate">
-    <label for="intermediate">Intermediate</label><br>
+                <p class="section-intro">
+                    Jump to a section:
+                </p>
 
-    <input type="radio" id="hard" name="difficulty" value="hard">
-    <label for="hard">Hard</label>
-</fieldset>
+                <ul class="navigation-list">
+                    <li><a href="#recipe-title">Home</a></li>
+                    <li><a href="#ingredients">Ingredients</a></li>
+                    <li><a href="#equipment">Equipment</a></li>
+                    <li><a href="#directions">Directions</a></li>
+                    <li><a href="#rating">Rate this recipe</a></li>
+                    <li><a href="#footer">About this page</a></li>
+                </ul>
 
-<p>&nbsp;</p>
+                <div class="helpful-links">
+                    <h3>Helpful Resources</h3>
+                    <p>
+                        <a href="https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/meat" target="_blank" rel="noopener noreferrer">
+                            Meat safety tips
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://www.foodsafety.gov/" target="_blank" rel="noopener noreferrer">
+                            FoodSafety.gov
+                        </a>
+                    </p>
+                </div>
+            </nav>
 
-<h3>Conversion</h3>
 
-<input type="text" id="tblspn" name="tblspn">
-=
-<input type="text" id="cups" name="cups">
-    
-<body>
+            <!-- COLUMN 2: MAIN PICTURE AND DESCRIPTION -->
+            <main class="col-50 section main-section" id="main">
+                <h2>Your Next Favorite Burger</h2>
 
-<header>
-    <h1>Homemade Hamburgers: A Classic Favorite</h1>
-</header>
+                <figure class="recipe-figure">
+                    <!-- Replace this path if your image has a different filename -->
+                    <img
+                        src="images/hamburger.jpg"
+                        alt="A homemade hamburger served on a bun"
+                        class="recipe-image"
+                    >
 
-<div class="wrapper">
+                    <figcaption>
+                        A simple homemade hamburger prepared
+                        with your favorite toppings.
+                    </figcaption>
+                </figure>
 
-    <div class="box1">
-        <!-- title/info/image -->
+                <div class="recipe-description">
+                    <h3>About This Recipe</h3>
+
+                    <p>
+                        Homemade hamburgers are a classic meal that
+                        you can customize with your favorite toppings.
+                        Start with seasoned ground beef, cook the
+                        patties thoroughly, and finish with a soft bun.
+                    </p>
+
+                    <p>
+                        <span class="highlight-text">Recipe style:</span>
+                        Classic American-inspired burger
+                    </p>
+
+                    <p>
+                        <span class="highlight-text">Difficulty:</span>
+                        Beginner-friendly
+                    </p>
+                </div>
+            </main>
+
+
+            <!-- COLUMN 3: RATING AND CONVERSION -->
+            <aside class="col-30 section rating-section" id="rating">
+
+                <h2>Recipe Details</h2>
+
+                <div class="info-card">
+                    <h3>Quick Facts</h3>
+                    <p><strong>Preparation:</strong> 15 minutes</p>
+                    <p><strong>Cooking:</strong> 10–15 minutes</p>
+                    <p><strong>Servings:</strong> <span id="serving-count">4</span></p>
+                    <p><strong>Difficulty:</strong> Easy</p>
+                </div>
+
+                <div class="rating-card">
+                    <h3>Rate This Recipe</h3>
+
+                    <form id="rating-form">
+                        <label for="recipe-rating">
+                            How would you rate this recipe?
+                        </label>
+
+                        <select id="recipe-rating" name="recipe-rating" required>
+                            <option value="">Choose a rating</option>
+                            <option value="5">5 - Excellent</option>
+                            <option value="4">4 - Very good</option>
+                            <option value="3">3 - Good</option>
+                            <option value="2">2 - Fair</option>
+                            <option value="1">1 - Needs improvement</option>
+                        </select>
+
+                        <button type="submit">Submit Rating</button>
+
+                        <p id="rating-message" class="status-message" aria-live="polite"></p>
+                    </form>
+                </div>
+
+                <div class="conversion-card">
+                    <h3>Serving Converter</h3>
+
+                    <p>
+                        The recipe starts with four servings.
+                        Change the number below to adjust the ingredient
+                        amounts in the ingredients section.
+                    </p>
+
+                    <label for="servings">
+                        Number of servings:
+                    </label>
+
+                    <input
+                        type="number"
+                        id="servings"
+                        name="servings"
+                        min="1"
+                        max="20"
+                        value="4"
+                    >
+
+                    <button type="button" id="convert-button">
+                        Convert Ingredients
+                    </button>
+
+                    <p id="conversion-message" class="status-message" aria-live="polite"></p>
+                </div>
+
+            </aside>
+
+        </div>
+
+
+        <!-- ROW 3: INGREDIENTS, EQUIPMENT, DIRECTIONS -->
+
+        <div class="row recipe-content-row">
+
+            <!-- COLUMN 1: INGREDIENTS -->
+            <section class="col-25 section ingredients-section" id="ingredients">
+                <h2>Ingredients</h2>
+
+                <p class="section-intro">
+                    Ingredients for
+                    <span id="ingredient-serving-count">4</span> servings.
+                </p>
+
+                <ul class="ingredient-list">
+                    <li>
+                        <span class="ingredient-amount" data-amount="1">1</span>
+                        lb ground beef
+                    </li>
+                    <li>
+                        <span class="ingredient-amount" data-amount="4">4</span>
+                        hamburger buns
+                    </li>
+                    <li>
+                        <span class="ingredient-amount" data-amount="1">1</span>
+                        tsp salt
+                    </li>
+                    <li>
+                        <span class="ingredient-amount" data-amount="0.5">½</span>
+                        tsp black pepper
+                    </li>
+                    <li>
+                        <span class="ingredient-amount" data-amount="1">1</span>
+                        tbsp cooking oil, if needed
+                    </li>
+                    <li>
+                        Lettuce, as desired
+                    </li>
+                    <li>
+                        Tomato slices, as desired
+                    </li>
+                    <li>
+                        Cheese and condiments, as desired
+                    </li>
+                </ul>
+
+                <p class="small-note">
+                    Seasonings and toppings can be adjusted to taste.
+                </p>
+            </section>
+
+
+            <!-- COLUMN 2: EQUIPMENT -->
+            <section class="col-25 section equipment-section" id="equipment">
+                <h2>Equipment</h2>
+
+                <p class="section-intro">
+                    Gather your tools before you begin.
+                </p>
+
+                <ul>
+                    <li>Mixing bowl</li>
+                    <li>Measuring spoons</li>
+                    <li>Measuring scale</li>
+                    <li>Spatula</li>
+                    <li>Skillet or grill</li>
+                    <li>Cutting board</li>
+                    <li>Knife</li>
+                    <li>Meat thermometer</li>
+                    <li>Plate for serving</li>
+                </ul>
+
+                <div class="equipment-tip">
+                    <h3>Kitchen Tip</h3>
+                    <p>
+                        Keep raw meat separate from ready-to-eat
+                        ingredients and wash your hands and tools
+                        after handling raw meat.
+                    </p>
+                </div>
+            </section>
+
+
+            <!-- COLUMN 3: DIRECTIONS -->
+            <section class="col-50 section directions-section" id="directions">
+                <h2>Directions</h2>
+
+                <p class="section-intro">
+                    Follow these steps to prepare your hamburgers.
+                </p>
+
+                <ol class="directions-list">
+                    <li>
+                        <strong>Prepare your ingredients.</strong>
+                        Wash your produce, slice your toppings,
+                        and set out your buns and condiments.
+                    </li>
+
+                    <li>
+                        <strong>Season the beef.</strong>
+                        Place the ground beef in a mixing bowl.
+                        Add the salt and black pepper, then mix
+                        gently until the seasonings are distributed.
+                    </li>
+
+                    <li>
+                        <strong>Shape the patties.</strong>
+                        Divide the beef into four equal portions
+                        and gently shape each portion into a patty.
+                    </li>
+
+                    <li>
+                        <strong>Heat your cooking surface.</strong>
+                        Warm a skillet or grill over medium-high
+                        heat. Add a little cooking oil if needed.
+                    </li>
+
+                    <li>
+                        <strong>Cook the patties.</strong>
+                        Cook the patties, turning as needed.
+                        Use a food thermometer to confirm the
+                        center reaches 160°F (71°C) for ground beef.
+                    </li>
+
+                    <li>
+                        <strong>Prepare the buns.</strong>
+                        If desired, lightly toast the hamburger
+                        buns on the skillet or grill.
+                    </li>
+
+                    <li>
+                        <strong>Assemble your hamburgers.</strong>
+                        Place each cooked patty on a bun and
+                        add lettuce, tomato, cheese, and your
+                        favorite condiments.
+                    </li>
+
+                    <li>
+                        <strong>Serve and enjoy.</strong>
+                        Serve the hamburgers while warm and
+                        refrigerate leftovers promptly.
+                    </li>
+                </ol>
+            </section>
+
+        </div>
+
+
+        <!-- ROW 4: FOOTER -->
+        <div class="row">
+            <footer class="col-100" id="footer">
+                <h2>The Homemade Kitchen</h2>
+
+                <p>
+                    A simple recipe made for everyday cooking.
+                </p>
+
+                <p class="footer-credit">
+                    Created by Shyliah Heads
+                    <span class="footer-divider">|</span>
+                    Coding Assignment 5
+                </p>
+
+                <p class="small-note">
+                    Always follow safe food-handling practices.
+                </p>
+            </footer>
+        </div>
+
     </div>
 
-    <div class="box2">
-        <!-- ingredients/rating/conversion -->
-    </div>
 
-</div>
+    <!-- BASIC JAVASCRIPT FOR THE RATING AND SERVING CONVERTER -->
+    <script>
+        // Update the displayed ingredient quantities when servings change.
+        const servingsInput = document.getElementById("servings");
+        const convertButton = document.getElementById("convert-button");
+        const servingCount = document.getElementById("serving-count");
+        const ingredientServingCount =
+            document.getElementById("ingredient-serving-count");
+        const conversionMessage =
+            document.getElementById("conversion-message");
 
+        function formatAmount(amount) {
+            const whole = Math.floor(amount);
+            const fraction = amount - whole;
 
-<div class="wrapper">
+            let fractionText = "";
 
-    <div class="box3">
-        <!-- directions -->
-    </div>
+            if (Math.abs(fraction - 0.25) < 0.01) {
+                fractionText = "¼";
+            } else if (Math.abs(fraction - 0.5) < 0.01) {
+                fractionText = "½";
+            } else if (Math.abs(fraction - 0.75) < 0.01) {
+                fractionText = "¾";
+            }
 
-    <div class="box4">
-        <!-- remaining content -->
-    </div>
+            if (fractionText && whole > 0) {
+                return whole + " " + fractionText;
+            }
 
-</div>
+            if (fractionText) {
+                return fractionText;
+            }
 
-<footer>
-    <p>© 2026 Shyliah Heads</p>
-</footer>
+            return Number(amount.toFixed(2)).toString();
+        }
 
-</body>
+        function convertIngredients() {
+            const servings = Number(servingsInput.value);
 
-    <ol>
-        <li>Place the ground beef in a large mixing bowl.</li>
-        <li>Add the salt and black pepper and gently mix until combined.</li>
-        <li>Divide the mixture into four equal portions and shape each portion into a patty.</li>
-        <li>Cook the patties on a skillet or grill until they are fully cooked.</li>
-        <li>Place a slice of cheese on each patty during the final minute of cooking.</li>
-        <li>Toast the hamburger buns if desired.</li>
-        <li>Place each cooked patty on a bun and add lettuce, tomato, pickles, ketchup, and mustard.</li>
-        <li>Serve the hamburgers while warm.</li>
-    </ol>
+            if (!Number.isInteger(servings) || servings < 1 || servings > 20) {
+                conversionMessage.textContent =
+                    "Please enter a whole number from 1 to 20.";
+                return;
+            }
 
-    <hr />
+            document.querySelectorAll(".ingredient-amount").forEach(
+                function (ingredient) {
+                    const originalAmount = Number(
+                        ingredient.dataset.amount
+                    );
 
-    <p class="academic">This page created as academic activity only.</p>
+                    const newAmount = originalAmount * servings / 4;
+
+                    ingredient.textContent = formatAmount(newAmount);
+                }
+            );
+
+            servingCount.textContent = servings;
+            ingredientServingCount.textContent = servings;
+
+            conversionMessage.textContent =
+                "Ingredient quantities updated for " +
+                servings + " servings.";
+        }
+
+        convertButton.addEventListener("click", convertIngredients);
+
+        // Make the recipe rating form respond to a submitted rating.
+        const ratingForm = document.getElementById("rating-form");
+        const ratingSelect = document.getElementById("recipe-rating");
+        const ratingMessage = document.getElementById("rating-message");
+
+        ratingForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            if (!ratingSelect.value) {
+                ratingMessage.textContent =
+                    "Please select a rating first.";
+                return;
+            }
+
+            ratingMessage.textContent =
+                "Thank you! You selected " +
+                ratingSelect.value + " out of 5.";
+        });
+    </script>
 
 </body>
 </html>
